@@ -1,0 +1,127 @@
+.runner-info{
+    background-color: #fff;
+    max-width: 350px;
+    padding: 25px;
+}
+.runner-bio{
+    display: flex;
+    align-items: center;
+}
+.runner-bio img{
+    max-width: 80px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.bio-details h3{
+    margin-bottom: 0;
+}
+
+ .location-dot{
+    margin-right: 7px;
+}
+
+.bio-details p{
+    margin-top: 3px;
+    color: gray;
+}
+.runner-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1f4fa;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.runner-body > div > p {
+    margin-top: 0;
+}
+
+.weight h3, .height h3, .age h3{
+    margin-bottom: 4px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.weight p, .height p, .age p{
+    color: gray;
+}
+
+
+.add-a-break h3{
+    margin-top: 50px;
+}
+
+.break-selection{
+    background-color: #f1f4fa;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.break{
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.break:hover{
+    background-color: rgb(30,129,176);
+    color: #fff;
+}
+
+.selected{
+    background-color: rgb(30,129,176);
+    color: #fff;
+}
+
+.exercise-time, .break-time{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1f4fa;
+    border-radius: 15px;
+}
+
+.exercise-details{
+    margin-top: 50px;
+}
+.exercise-time p , .break-time p{
+    color: gray;
+}
+
+.break-time{
+    margin-top: 15px;
+}
+
+.btn-completed {
+    background-color: rgb(226,135,67) ;
+    width: 100%;
+    border: none;
+    padding: 12px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.btn-completed:hover{
+    background-color:  #1e81b0;;
+}
