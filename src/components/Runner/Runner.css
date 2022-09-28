@@ -1,7 +1,8 @@
 .runner-info{
     background-color: #fff;
     max-width: 350px;
-    padding: 25px;
+    padding: 50px 25px;
+    height: 100%;
 }
 .runner-bio{
     display: flex;
