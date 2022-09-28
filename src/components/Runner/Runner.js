@@ -75,6 +75,11 @@ const Runner = () => {
             <div className="actively-completed">
                 <button onClick={() => {addToast(); setToggle(!toggle)}} className='btn-completed' style={toggle ? {backgroundColor: 'rgb(226,135,67)'} : {backgroundColor: '#3498db'}}>{toggle ? 'Actively Completed' : 'Well Done'}</button>
             </div>
+
+
+            <div className="actively-completed">
+                <button onClick={() => {addToast(); setToggle(!toggle)}} className='btn-completed' style={toggle ? {backgroundColor: 'rgb(226,135,67)'} : {backgroundColor: '#3498db'}}>{toggle ? 'Actively Completed' : 'Well Done'}</button>
+            </div>
         </div>
     );
 };
