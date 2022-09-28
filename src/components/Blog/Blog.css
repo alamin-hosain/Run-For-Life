@@ -1,4 +1,16 @@
 .blog{
     padding: 100px;
+    background-color: #fff;
+ 
+}
 
+@media screen and (min-width: 778px) {
+    .blog{
+        margin-top: 100px;
+    }
+    
+}
+
+.article{
+    margin-bottom: 60px;
 }

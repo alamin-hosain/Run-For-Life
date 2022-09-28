@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Runner.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRunning,faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import Swal from 'sweetalert2';
+
 
 
 const Runner = () => {
+
+    const [toggle, setToggle] = useState(true);
+
+    const addToast = () =>{
+        Swal.fire(
+            'You Did It!',
+            'Congratulations for your Awesome Run!',
+            'success'
+          )
+        
+    }
+
+
     return (
         <div className='runner-info'>
             <div className="runner-bio">
@@ -55,10 +73,10 @@ const Runner = () => {
             </div>
 
             <div className="actively-completed">
-                <button className='btn-completed'>Actively Completed</button>
+                <button onClick={() => {addToast(); setToggle(!toggle)}} className='btn-completed' style={toggle ? {backgroundColor: 'rgb(226,135,67)'} : {backgroundColor: '#3498db'}}>{toggle ? 'Actively Completed' : 'Well Done'}</button>
             </div>
         </div>
     );
 };
 
-export default Runner;
+export default Runner;  

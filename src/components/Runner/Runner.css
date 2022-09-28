@@ -126,3 +126,12 @@
 .btn-completed:hover{
     background-color:  #1e81b0;;
 }
+
+
+.active{
+    background-color: green;
+}
+
+.deactive{
+    background-color: red;
+}
