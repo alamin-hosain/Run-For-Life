@@ -1,0 +1,88 @@
+[
+    {
+        "id": "1000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running.webp",
+        "name": "Base Runs",
+        "timeRequired" : 30,
+        "description" : "Base runs are your basic training runs.These aerobic runs develop your cardiovascular fitness, strengthen your muscles, bones, and connective tissues to handle the forces and demands of running"
+      },
+
+    {
+        "id": "2000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-4.webp",
+        "name": "Recovery Runs",
+        "timeRequired" : 20,
+        "description" : "A recovery run is a low-intensity, easy-effort run typically performed within 24 hours of a race or hard workout. As the name suggests, recovery runs help your body recover and bounce back from strenuous, taxing workouts."
+      },
+
+      {
+        "id": "3000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-8.webp",
+        "name": "Long Runs",
+        "timeRequired" : 60,
+        "description" : "Long runs are exactly what they sound like: a long-distance run that exceeds the distance of your typical daily mileage to increase your cardiovascular and muscular endurance, mental stamina, and aerobic energy systems to handle the distance of your target race."
+      },
+
+      {
+        "id": "4000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-5.webp",
+        "name": "Threshold Workouts",
+        "timeRequired" : 40,
+        "description" : "Threshold workouts are designed to improve your lactate threshold or the point at which your body can no longer clear lactate from the muscles as quickly as it is being produced. Beyond this point, you will rapidly fatigue, and your legs feel heavy and tired."
+      },
+
+      {
+        "id": "5000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-7.webp",
+        "name": "Tempo Runs",
+        "timeRequired" : 20,
+        "description" : "Tempo runs are specific threshold workouts that involve maintaining threshold effort (usually run around 10k or half marathon pace) for a sustained 20 minutes or more."
+      },
+
+      {
+        "id": "6000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-10.webp",
+        "name": "Progression Runs",
+        "timeRequired" : 30,
+        "description" : "Progession runs are like base runs, but the goal is to gradually increase the pace and intensity throughout the duration of the run. You might start a five-mile progression run at your comfortable pace. Then, from miles 2-3, you ramp up to half marathon pace. Miles 3-4 are run at 10k pace, and the last mile is run at 5k pace."
+      },
+
+      {
+        "id": "7000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-2.webp",
+        "name": "Hill Repeats",
+        "timeRequired" : 60,
+        "description" : "Hill repeats are sprints run up a hill. Runners may choose a short, steep hill, such as one that can be run in 20-30 seconds, or a longer hill, which might take one to several minutes to summit. The grade of the incline and length of the hill to use is dependent on your race goals."
+      },
+
+      {
+        "id": "8000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-3.webp",
+        "name": "Interval Workouts",
+        "timeRequired" : 20,
+        "description" : "Track interval workouts involve running specific distances at specific paces on the track with the goal of training you to run faster, learn the feeling of different paces, and boost your fitness."
+      },
+
+      {
+        "id": "9000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-11.webp",
+        "name": "Fartlek Runs",
+        "timeRequired" : 30,
+        "description" : "Fartlek is a Swedish term for “speed play.” Fartlek runs are a form of speed workout, much like track intervals, but have a looser structure and take place on a trail, road, or another running course instead of a track."
+      },
+
+
+      {
+        "id": "10000",
+        "img": "https://marathonhandbook.com/wp-content/uploads/2022/03/Types-Of-Running-6.webp",
+        "name": "Strides",
+        "timeRequired" : 50,
+        "description" : "Strides can help you run faster by increasing your turnover or running cadence. Strides are typically run at the end of a workout and can be considered running sprints."
+      }
+      
+
+
+
+]
+
+
