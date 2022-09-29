@@ -7,6 +7,17 @@ import Runner from '../Runner/Runner';
 const Main = () => {
     const [exercises, setExercises] = useState([]);
 
+    const [exerciseTime, setExerciseTime] = useState(0);
+
+    const exerciseTimeCalculate = (timeRequired) => {
+        if(exerciseTime !== 0){
+            const newTime = exerciseTime + timeRequired;
+            setExerciseTime(newTime)
+        }else{
+            setExerciseTime(timeRequired)
+        }
+    }
+
     useEffect(() => {
         fetch('data.json')
         .then( res => res.json())
@@ -25,13 +36,13 @@ const Main = () => {
                 </div>
                 <div className="card-section">
                     {
-                    exercises.map((exercise) =>                <SingleExcersie key={exercise.id} exercise={exercise}></SingleExcersie>) 
+                    exercises.map((exercise) =>                <SingleExcersie key={exercise.id} exercise={exercise} exerciseTimeCalculate={exerciseTimeCalculate}></SingleExcersie>) 
                     }
                 </div>
             </div>
             
             <div className="runner-page">
-                <Runner></Runner>
+                <Runner exerciseTime={exerciseTime}></Runner>
             </div>
       
         </div>

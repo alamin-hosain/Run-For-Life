@@ -87,7 +87,9 @@
     background-color: rgb(30,129,176);
     color: #fff;
 }
-
+.not-selected{
+    background-color: #fff;
+}
 .exercise-time, .break-time{
     display: flex;
     justify-content: space-around;
@@ -124,7 +126,7 @@
 }
 
 .btn-completed:hover{
-    background-color:  #1e81b0;;
+    background-color:  #1e81b0;
 }
 
 

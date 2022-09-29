@@ -47,6 +47,21 @@
     margin-top: 10px;
 }
 
+.addToBtnColor{
+   
+    background-color: #1e81b0;
+    width: 100%;
+    border: none;
+    padding: 7px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
 .addToBtn:hover{
     background-color: #1e81b0;
 }

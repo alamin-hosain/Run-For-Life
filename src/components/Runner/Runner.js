@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import './Runner.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRunning,faLocationDot} from '@fortawesome/free-solid-svg-icons';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2';
 
 
 
-const Runner = () => {
+const Runner = ({exerciseTime}) => {
 
     const [toggle, setToggle] = useState(true);
+    const [rest, setRest] = useState(0);
+    const [selected, setSelected] = useState('not-selected');
+
+    const colorSet = () => {
+        setSelected(!selected);
+    }
+
+    const calculateRest = (e) => {
+        const restTime = parseInt(e.target.innerText);
+        setRest(restTime);
+    }
 
     const addToast = () =>{
         Swal.fire(
@@ -21,6 +29,7 @@ const Runner = () => {
           )
         
     }
+
 
 
     return (
@@ -51,11 +60,11 @@ const Runner = () => {
             <div className="add-a-break">
                 <h3>Add A Break</h3>
                 <div className="break-selection">
-                    <span className="break ">10s</span>
-                    <span className="break">20s</span>
-                    <span className="break selected">30s</span>
-                    <span className="break">40s</span>
-                    <span className="break">50s</span>
+                    <span style={{selected }} className="break" onClick={(e) => calculateRest(e)}>10s</span>
+                    <span className="break" onClick={(e) => calculateRest(e)}>20s</span>
+                    <span className="break" onClick={(e) => calculateRest(e)}>30s</span>
+                    <span className="break" onClick={(e) => calculateRest(e)}>40s</span>
+                    <span className="break" onClick={(e) => calculateRest(e)}>50s</span>
                 </div>
             </div>
 
@@ -63,12 +72,12 @@ const Runner = () => {
                 <h3>Exercise Details</h3>
                 <div className="exercise-time">
                     <h4>Exercise Time</h4>
-                    <p>60 Minute</p>
+                    <p>{exerciseTime} Minute</p>
                 </div>
 
                 <div className="break-time">
                     <h4>Break Time</h4>
-                    <p>30 Seconds</p>
+                    <p>{rest} Seconds</p>
                 </div>
             </div>
 
