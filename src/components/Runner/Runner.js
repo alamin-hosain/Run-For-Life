@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Runner.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
@@ -10,16 +10,25 @@ const Runner = ({exerciseTime}) => {
 
     const [toggle, setToggle] = useState(true);
     const [rest, setRest] = useState(0);
-    const [selected, setSelected] = useState('not-selected');
-
-    const colorSet = () => {
-        setSelected(!selected);
-    }
 
     const calculateRest = (e) => {
+
         const restTime = parseInt(e.target.innerText);
         setRest(restTime);
+      
+        const prevRest = localStorage.getItem('rest-time');
+        if(prevRest){
+            localStorage.setItem('rest-time', restTime);
+        }else{
+            localStorage.setItem('rest-time', restTime);
+        }
     }
+
+    useEffect(() => {
+        const getRest = localStorage.getItem('rest-time');
+        setRest(getRest);
+    },[rest])
+
 
     const addToast = () =>{
         Swal.fire(
@@ -60,7 +69,7 @@ const Runner = ({exerciseTime}) => {
             <div className="add-a-break">
                 <h3>Add A Break</h3>
                 <div className="break-selection">
-                    <span style={{selected }} className="break" onClick={(e) => calculateRest(e)}>10s</span>
+                    <span className="break" onClick={(e) => calculateRest(e)}>10s</span>
                     <span className="break" onClick={(e) => calculateRest(e)}>20s</span>
                     <span className="break" onClick={(e) => calculateRest(e)}>30s</span>
                     <span className="break" onClick={(e) => calculateRest(e)}>40s</span>
