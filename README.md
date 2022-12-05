@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# See the Live site url
+Life Site URL [Run For Life](https://b6-ultra-active-club-alamin-hosain.netlify.app/).
 
 ## Available Scripts
 
